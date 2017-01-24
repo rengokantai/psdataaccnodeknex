@@ -65,3 +65,27 @@ module.exports =
     
 }
 ```
+screen.js
+```
+var screen = {
+ clear:function(){
+  process.stdout.write("\033c");
+ }
+}
+```
+####07:45
+```
+npm install prettyjson --save
+```
+in screen.js
+```
+var prettyjson = requrie("prettyjson");
+ops ={
+ keysColor:"",
+ dashColor:"",
+ stringColor:"",
+ numberColor:""
+};
+output=prettyjson.render(data);
+```
+
