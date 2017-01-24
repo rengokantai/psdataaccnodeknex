@@ -95,3 +95,18 @@ var query = knex.select("title","rating").from("book");
 var sql = query.toString();
 console.log(sql);
 ```
+
+
+
+##2. Building Queries 
+###1 Querying with Promises
+```
+knex.select/column("title","rating").from/table("book").then(function(rows){},function(){
+});
+```
+
+
+
+
+
+
