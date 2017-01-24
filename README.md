@@ -94,4 +94,4 @@ output=prettyjson.render(data);
 var query = knex.select("title","rating").from("book");
 var sql = query.toString();
 console.log(sql);
-
+```
