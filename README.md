@@ -89,3 +89,9 @@ ops ={
 output=prettyjson.render(data);
 ```
 
+####10:45
+```
+var query = knex.select("title","rating").from("book");
+var sql = query.toString();
+console.log(sql);
+
